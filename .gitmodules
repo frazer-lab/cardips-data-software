@@ -1,0 +1,6 @@
+[submodule "submodules/pipelines"]
+	path = submodules/pipelines
+	url = git@github.com:frazer-lab/pipelines.git
+[submodule "submodules/cdpybio"]
+	path = submodules/cdpybio
+	url = git@github.com:cdeboever3/cdpybio.git
