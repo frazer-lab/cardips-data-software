@@ -19,6 +19,7 @@ environment = join(root, 'environment.sh')
 
 ## public data
 subdir = public_data
+encode_blacklist = join(subdir, 'encode_blacklist.bed')
 hg19 = join(subdir, 'hg19', 'hg19.fa')
 star_index = join(subdir, 'star_index')
 rsem_reference = join(subdir, 'rsem_reference', 'gencode_v19_ref')
@@ -32,6 +33,8 @@ gencode_transcript_bed = join(subdir, 'gencode_v19', 'transcripts.bed')
 gencode_exon_bed = join(subdir, 'gencode_v19', 'exons.bed')
 gencode_utr_bed = join(subdir, 'gencode_v19', 'utrs.bed')
 gencode_promoter_bed = join(subdir, 'gencode_v19', 'promoters.bed')
+picard_ref_flat = join(subdir, 'gencode_v19', 'gencode_no_rRNA.txt.gz')
+picard_rrna = join(subdir, 'gencode_v19', 'rrna.interval')
 roadmap_25_state = join(subdir, 'roadmap_25_state')
 roadmap_25_state_sample_legend = join(roadmap_25_state, 'EIDlegend.txt')
 roadmap_25_state_annotation = join(roadmap_25_state,
@@ -39,14 +42,15 @@ roadmap_25_state_annotation = join(roadmap_25_state,
 ## software
 subdir = software
 bedGraphToBigWig = join(subdir, 'bedGraphToBigWig')
-bedtools = join(subdir, 'bedtools2-2.20.1/bin/bedtools')
+gtfToGenePred= join(subdir, 'gtfToGenePred')
+bedtools = join(subdir, 'bedtools2-2.23.0/bin/bedtools')
 blat = join(subdir, 'blat')
 fastqc = join(subdir, 'FastQC', 'fastqc')
 fastx = join(subdir, 'fastx_toolkit-0.0.14')
 featureCounts = join(subdir, 'subread-1.4.6-Linux-x86_64', 'bin',
                      'featureCounts')
 homer = join(subdir, 'homer', 'bin')
-picard = join(subdir, 'picard-1.128', 'dist', 'picard.jar')
+picard = join(subdir, 'picard-1.131', 'dist', 'picard.jar')
 R = join(subdir, 'R-3.1.1', 'bin', 'R')
 Rscript = join(subdir, 'R-3.1.1', 'bin', 'Rscript')
 rsem = join(subdir, 'rsem-1.2.20')

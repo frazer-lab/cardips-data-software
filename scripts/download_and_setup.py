@@ -10,6 +10,9 @@ import pipelines as ps
 
 import projectpy as ppy
 
+if not os.path.exists(ppy.gtfToGenePred):
+    ps.prepare.download_gtfToGenePred(ppy.software)
+
 if not os.path.exists(ppy.bedGraphToBigWig):
     ps.prepare.download_bedGraphToBigWig(ppy.software)
 
@@ -115,3 +118,11 @@ except ImportError:
 if not os.path.exists(ppy.gencode_dexseq_annotation):
     ps.prepare.make_dexseq_annotation(ppy.gencode_gtf,
                                       ppy.gencode_dexseq_annotation)
+
+if not os.path.exists(ppy.encode_blacklist):
+    ps.prepare.download_encode_blacklist(ppy.public_data)
+
+if not os.path.exists(ppy.picard_ref_flat):
+    ps.prepare.make_rna_seq_metrics_files(
+        os.path.join(ppy.public_data, 'gencode_v19'), ppy.gencode_gtf, ppy.hg19,
+        ppy.picard, ppy.gtfToGenePred)

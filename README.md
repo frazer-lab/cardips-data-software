@@ -3,6 +3,10 @@
 Repository for downloading public data and software for use with the cardips
 project.
 
+## `environment.sh`
+This contains path updates and should be sourced before working with cardips
+data.
+
 ## Dependencies
 
 Several python packages are needed to download the public data and software and
@@ -17,4 +21,4 @@ and run:
 	git submodule update
 
 `projectpy` is part of the repo.  `pybedtools`, `pysam`, `pyvcf`,
-`HTSeq` should be installed using `pip install`.
+`HTSeq`, and `macs2, should be installed using `pip install`.
