@@ -10,6 +10,12 @@ import pipelines as ps
 
 import projectpy as ppy
 
+if not os.path.exists(ppy.snpeff):
+    ps.prepare.download_snpeff(ppy.software)
+
+if not os.path.exists(ppy.igvtools):
+    ps.prepare.download_igvtools(ppy.software)
+
 if not os.path.exists(ppy.gtfToGenePred):
     ps.prepare.download_gtfToGenePred(ppy.software)
 

@@ -41,6 +41,8 @@ roadmap_25_state_annotation = join(roadmap_25_state,
                                    'annotation_25_imputed12marks.txt')
 ## software
 subdir = software
+bcftools= join(subdir, 'samtools-bcftools-htslib-1.0_x64-linux', 'bin',
+               'bcftools')
 bedGraphToBigWig = join(subdir, 'bedGraphToBigWig')
 gtfToGenePred= join(subdir, 'gtfToGenePred')
 bedtools = join(subdir, 'bedtools2-2.23.0/bin/bedtools')
@@ -50,12 +52,15 @@ fastx = join(subdir, 'fastx_toolkit-0.0.14')
 featureCounts = join(subdir, 'subread-1.4.6-Linux-x86_64', 'bin',
                      'featureCounts')
 homer = join(subdir, 'homer', 'bin')
+igvtools = join(subdir, 'IGVTools')
 picard = join(subdir, 'picard-1.131', 'dist', 'picard.jar')
 R = join(subdir, 'R-3.1.1', 'bin', 'R')
 Rscript = join(subdir, 'R-3.1.1', 'bin', 'Rscript')
 rsem = join(subdir, 'rsem-1.2.20')
 samtools = join(subdir, 'samtools-bcftools-htslib-1.0_x64-linux', 'bin',
                 'samtools')
+snpeff = join(subdir, 'snpEff', 'snpEff.jar')
+snpsift = join(subdir, 'snpEff', 'SnpSift.jar')
 star = join(subdir, 'STAR-STAR_2.4.0h', 'bin', 'Linux_x86_64_static', 'STAR')
 vcftools = join(subdir, 'vcftools_0.1.12b', 'bin', 'vcftools')
 weblogo = join(subdir, 'weblogo', 'seqlogo')

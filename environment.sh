@@ -5,4 +5,5 @@ export LD_LIBRARY_PATH="/raid3/projects/CARDIPS/software/R-3.1.1/lib64/R/lib:$LD
 export PATH="/raid3/projects/CARDIPS/software/homer/bin:$PATH"
 export PATH="/raid3/projects/CARDIPS/software/samtools-bcftools-htslib-1.0_x64-linux/bin:$PATH"
 export PATH="/raid3/projects/CARDIPS/software/weblogo:$PATH"
+export PATH="/raid3/projects/CARDIPS/software/Mendel-143:$PATH"
 export PATH="/raid3/projects/CARDIPS/software/:$PATH"
