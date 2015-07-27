@@ -2,10 +2,10 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name = 'projectpy',
+    name = 'cardipspy',
     version = '0.0.1',
     author = 'Christopher DeBoever',
     author_email = 'cdeboever3@gmail.com',
-    description = ('Contains code specific to this project.'),
+    description = ('Contains code specific to cardips.'),
     packages=find_packages(),
 )

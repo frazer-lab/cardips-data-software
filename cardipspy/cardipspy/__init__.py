@@ -12,8 +12,8 @@ def _get_project_dir():
 
 root = _get_project_dir()
 
-software = '/raid3/projects/CARDIPS/software'
-public_data = '/raid3/projects/CARDIPS/data/public'
+software = '/raid3/software'
+public_data = '/raid3/publicdata'
 
 environment = join(root, 'environment.sh')
 
@@ -24,6 +24,7 @@ hg19 = join(subdir, 'hg19', 'hg19.fa')
 star_index = join(subdir, 'star_index')
 rsem_reference = join(subdir, 'rsem_reference', 'gencode_v19_ref')
 gencode_gtf = join(subdir, 'gencode_v19', 'gencode.v19.annotation.gtf')
+gencode_splice_jxn_info = join(subdir, 'gencode_v19', 'splice_jxn_info.tsv')
 gencode_gene_info = join(subdir, 'gencode_v19', 'gene_info.tsv')
 gencode_transcript_gene = join(subdir, 'gencode_v19', 'gene_transcript.tsv')
 gencode_dexseq_annotation = join(subdir, 'gencode_v19',
@@ -41,13 +42,13 @@ roadmap_25_state_annotation = join(roadmap_25_state,
                                    'annotation_25_imputed12marks.txt')
 ## software
 subdir = software
-bcftools= join(subdir, 'samtools-bcftools-htslib-1.0_x64-linux', 'bin',
-               'bcftools')
+bcftools= join(subdir, 'bcftools-1.2', 'bin', 'bcftools')
 bedGraphToBigWig = join(subdir, 'bedGraphToBigWig')
+epacts = join(subdir, 'EPACTS-3.2.6', 'bin', 'epacts')
 gtfToGenePred= join(subdir, 'gtfToGenePred')
 bedtools = join(subdir, 'bedtools2-2.23.0/bin/bedtools')
 blat = join(subdir, 'blat')
-fastqc = join(subdir, 'FastQC', 'fastqc')
+fastqc = join(subdir, 'fastqc_v0.11.2', 'fastqc')
 fastx = join(subdir, 'fastx_toolkit-0.0.14')
 featureCounts = join(subdir, 'subread-1.4.6-Linux-x86_64', 'bin',
                      'featureCounts')
@@ -57,9 +58,8 @@ picard = join(subdir, 'picard-1.131', 'dist', 'picard.jar')
 R = join(subdir, 'R-3.1.1', 'bin', 'R')
 Rscript = join(subdir, 'R-3.1.1', 'bin', 'Rscript')
 rsem = join(subdir, 'rsem-1.2.20')
-samtools = join(subdir, 'samtools-bcftools-htslib-1.0_x64-linux', 'bin',
-                'samtools')
-snpeff = join(subdir, 'snpEff', 'snpEff.jar')
+samtools = join(subdir, 'samtools-1.2', 'bin', 'samtools')
+snpeff = join(subdir, 'snpEff_v4_1g_core', 'snpEff.jar')
 snpsift = join(subdir, 'snpEff', 'SnpSift.jar')
 star = join(subdir, 'STAR-STAR_2.4.0h', 'bin', 'Linux_x86_64_static', 'STAR')
 vcftools = join(subdir, 'vcftools_0.1.12b', 'bin', 'vcftools')
