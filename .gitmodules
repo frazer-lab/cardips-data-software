@@ -7,3 +7,6 @@
 [submodule "submodules/WASP"]
 	path = submodules/WASP
 	url = git@github.com:cdeboever3/WASP.git
+[submodule "submodules/pyencodetools"]
+	path = submodules/pyencodetools
+	url = https://github.com/cdeboever3/pyencodetools.git
